@@ -22,7 +22,7 @@ mongoose
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true
-    }).then(() => console.log("DB CONNECTED!"));
+    }).then(() => console.log("DB CONNECTED!")).catch((err) => console.log("ERROR on DB", err));
 
 //Midlewares
 app.use(bodyParser.json());
