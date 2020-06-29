@@ -16,7 +16,7 @@ const orderRoutes = require("./routes/order");
 const paymentBRoutes = require("./routes/paymentBRoutes");
 
 //DB Config
-let url = "mongodb://localhost:27017/tshirt" || process.env.DATABASE
+let url = process.env.DATABASE || "mongodb://localhost:27017/tshirt"
 mongoose
     .connect(url, {
         useNewUrlParser: true,
